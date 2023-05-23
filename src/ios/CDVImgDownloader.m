@@ -64,7 +64,7 @@
 
   }
 
-  - (void) saveImageToPhotos: (CDVPluginResult) pluginRes command: (CDVInvokedUrlCommand * ) command data: (NSData) data {
+  - (void) saveImageToPhotos: (CDVPluginResult *) pluginRes command: (CDVInvokedUrlCommand * ) command data: (NSData *) data {
 
     UIImage * image = [UIImage imageWithData: data];
     // NSData *imgdata = UIImagePNGRepresentation(image);
