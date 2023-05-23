@@ -1,1 +1,30 @@
 
+{
+  "author": {
+    "name": ""
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "com.disusered.safe",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Image downloader for cordova",
+  "homepage": "https://github.com/Nomia/ImgDownloader",
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "ImgDownloader",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nomia/ImgDownloader.git"
+  },
+  "scripts": {
+  },
+  "version": "1.0.1"
+}
