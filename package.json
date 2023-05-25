@@ -5,7 +5,7 @@
   },
   "bundleDependencies": false,
   "cordova": {
-    "id": "com.disusered.safe",
+    "id": "com.okmemo.cordova.imgdownloader",
     "platforms": [
       "ios"
     ]
