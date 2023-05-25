@@ -9,14 +9,16 @@
 
 - (void)download:(CDVInvokedUrlCommand*)command {
 	[self.commandDelegate runInBackground:^{
-		NSString     *imgRelativePath   	= [command.arguments objectAtIndex:0]; //relative to dataDirectory => "Library/NoCloud"
+		NSString     *imgRelativePath   	= [command.arguments objectAtIndex:0]; //relative to tmpDirectory => "tmp"
 		NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
-	    NSString *path = [paths objectAtIndex:0];
+// 	    NSString *path = [paths objectAtIndex:0];
 
-	    NSString *noCloud = @"NoCloud";
-	    NSString *noCloudPath = [path stringByAppendingPathComponent:noCloud];
+// 	    NSString *noCloud = @"NoCloud";
+// 	    NSString *noCloudPath = [path stringByAppendingPathComponent:noCloud];
 	    
-	    NSString *imgPath = [noCloudPath stringByAppendingString:imgRelativePath];
+// 	    NSString *imgPath = [noCloudPath stringByAppendingString:imgRelativePath];
+		NSString *tmpPath = NSTemporaryDirectory();
+		NSString *imgPath = [tmpPath stringByAppendingString:imgRelativePath];
 	    
 	    
 	    UIImage *image = [UIImage imageWithContentsOfFile:imgPath];
